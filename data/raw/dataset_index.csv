@@ -1,0 +1,14 @@
+image_path,class_id,class_name
+raw/images/crazing/Cr_1.jpg,0,裂纹
+raw/images/crazing/Cr_2.jpg,0,裂纹
+raw/images/crazing/Cr_3.jpg,0,裂纹
+raw/images/inclusion/In_1.jpg,1,夹杂
+raw/images/inclusion/In_2.jpg,1,夹杂
+raw/images/patches/Pa_1.jpg,2,斑块
+raw/images/patches/Pa_2.jpg,2,斑块
+raw/images/pitted_surface/PS_1.jpg,3,麻点
+raw/images/pitted_surface/PS_2.jpg,3,麻点
+raw/images/rolled-in_scale/RS_1.jpg,4,氧化铁皮
+raw/images/rolled-in_scale/RS_2.jpg,4,氧化铁皮
+raw/images/scratches/Sc_1.jpg,5,划痕
+raw/images/scratches/Sc_2.jpg,5,划痕
