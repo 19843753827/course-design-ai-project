@@ -1,4 +1,4 @@
-``
+```
 # 基于轻量化卷积神经网络的工业零部件表面缺陷智能检测系统
 
 > 制造智能技术课程设计项目 | Vibe Coding开发 | B/S架构 | 工业质量控制场景
@@ -19,11 +19,6 @@
 
 ## 系统架构
 
-本项目采用完整B/S架构，包含四大核心模块：
-
-```
-## 系统架构
-
 本项目采用完整B/S架构，自上而下分为四层：
 
 1. **前端UI层**：图片上传、检测结果展示、历史记录查询、检测报告预览
@@ -32,8 +27,6 @@
 4. **数据存储层**：SQLite数据库，存储检测记录与图片路径
 
 各层之间通过HTTP/REST API通信，前后端解耦，算法模块独立封装。
-
-```
 
 ## 技术栈
 
@@ -44,33 +37,29 @@
 - **开发方式**：Vibe Coding（AI辅助人机协同开发）
 - **版本控制**：Git + GitHub
 
-```
 ## 项目目录结构
 
-```
-
-course-design-ai-project/
-├── README.md                    # 项目说明文档
-├── 学习笔记.md                  # 第一阶段：学习笔记
-├── 选题说明.md                  # 第二阶段：选题说明
-├── 方案设计.md                  # 第二阶段：方案设计
-├── data/                        # 数据目录
-│   ├── README.md                # 数据集详细说明与获取方法
-│   ├── raw/                     # 原始数据索引
-│   │   └── dataset_index.csv    # 完整数据集索引
-│   ├── processed/               # 预处理后数据索引
-│   │   ├── train_index.csv      # 训练集索引
-│   │   ├── val_index.csv        # 验证集索引
-│   │   └── test_index.csv       # 测试集索引
-│   └── samples/                 # 样本图片（每类 1 张）
-├── src/                         # 源代码目录
-│   └── preprocess.py            # 数据预处理程序
-├── prompt/                      # AI 提示词追溯日志
-│   ├── phase1_vibe_coding_learning.json
-│   ├── phase2_topic_planning.json
-│   └── phase3_data_preparation.json
-└── models/                      # 模型权重目录
-└── .gitkeep```
+- **README.md**：项目说明文档
+- **学习笔记.md**：第一阶段学习笔记
+- **选题说明.md**：第二阶段选题说明
+- **方案设计.md**：第二阶段方案设计
+- **data/**：数据目录
+  - **README.md**：数据集详细说明与获取方法
+  - **raw/**：原始数据索引
+    - **dataset_index.csv**：完整数据集索引（1800条）
+  - **processed/**：预处理后数据索引
+    - **train_index.csv**：训练集索引（70%，1260条）
+    - **val_index.csv**：验证集索引（15%，270条）
+    - **test_index.csv**：测试集索引（15%，270条）
+  - **samples/**：样本图片（每类1张，共6张）
+- **src/**：源代码目录
+  - **preprocess.py**：数据预处理程序
+- **prompt/**：AI提示词追溯日志
+  - **phase1_vibe_coding_learning.json**：第一阶段对话记录
+  - **phase2_topic_planning.json**：第二阶段对话记录
+  - **phase3_data_preparation.json**：第三阶段对话记录
+- **models/**：模型权重目录
+  - **.gitkeep**：目录占位文件
 
 ## 数据集
 
@@ -80,6 +69,7 @@ course-design-ai-project/
 - **缺陷类别**：裂纹(Crazing)、夹杂(Inclusion)、斑块(Patches)、麻点(Pitted Surface)、氧化铁皮(Rolled-in Scale)、划痕(Scratches)
 - **详细说明**：见 [data/README.md](data/README.md)
 - **获取链接**：
+  - Kaggle（推荐，最稳定）：https://www.kaggle.com/datasets/fantacher/neu-metal-surface-defects-data
   - 官方发布主页：https://faculty.neu.edu.cn/songkechen/zh_CN/zhym/263269/list/index.htm
 
 ## 数据预处理
@@ -134,6 +124,6 @@ python src/preprocess.py --raw_dir data/raw/images
 [1] 张智海等。制造智能技术基础 [M]. 北京：清华大学出版社，2022.
 [2] 杨杰。人工智能基础 [M]. 北京：机械工业出版社，2025.
 [3] Song K, Yan Y. A noise robust method for surface defect detection of steel products [J]. IEEE Transactions on Instrumentation and Measurement, 2013.
-[4] NEU 表面缺陷数据集 [EB/OL].[ https://faculty.neu.edu.cn/songkechen/zh_CN/zhym/263269/list/index.htm).
+[4] NEU 表面缺陷数据集 [EB/OL]. [https://faculty.neu.edu.cn/songkechen/zh_CN/zhym/263269/list/index.htm).
 [5] Flask 官方文档 [EB/OL]. [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/), 2024.
 [6] PyTorch 官方文档 [EB/OL]. https://pytorch.org/docs/, 2024.
