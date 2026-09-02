@@ -57,9 +57,10 @@ def scan_raw_data(raw_images_dir):
         
         # 扫描该类别下所有jpg图片
         image_files = [
-            f for f in os.listdir(class_dir)
-            if f.lower().endswith(('.jpg', '.jpeg', '.png'))
-        ]
+    f for f in os.listdir(class_dir)
+    if f.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp'))
+    ]
+
         
         for img_file in sorted(image_files):
             # 相对路径（相对于data目录），便于跨平台使用
