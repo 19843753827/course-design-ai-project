@@ -312,9 +312,17 @@ python tests/test_system.py
 
 详细 prompt 记录见 `prompt/` 目录。
 
+
+## 十四、🎬 系统演示视频
+> GitHub不支持大视频存储，演示录像存放于百度网盘
+链接: https://pan.baidu.com/s/1JE9qfP53q_9HMNEeMbDIcQ?pwd=ancx 
+提取码: ancx
+
+> 如果链接失效，请联系获取。
+
 ---
 
-## 十四、参考文献
+## 十五、参考文献
 
 [1] 张智海等. 制造智能技术基础 [M]. 北京：清华大学出版社，2022.
 
@@ -332,4 +340,4 @@ python tests/test_system.py
 
 ---
 
-*文档版本：v1.0 | 最后更新：2026-09-02*
+*文档版本：v2.0 | 最后更新：2026-09-03*
